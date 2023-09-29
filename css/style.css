@@ -1,0 +1,157 @@
+:root {
+    --main-color: aliceblue;
+    --main-background-color: #EFEFF1;
+}
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+html{ 
+    scroll-behavior: smooth;
+    width: 100%;
+    background-color: var(--main-background-color);
+}
+
+header{
+    display: flex;
+    background-color: #707070;
+    height: 6vh;
+    min-height: 40px;
+    align-items: center;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#navbar li{
+    display: block;
+}
+
+#li1 {
+    justify-self: left;
+    margin-left: 10%;
+}
+
+header a {
+    color: var(--main-color);
+    display: block;
+    margin-right: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+header a:hover{
+    background-color:#85858567;
+}
+
+main {
+    padding-top: 6vh;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1   {
+    justify-content: center;
+    margin-top: 10%;
+    width: 100%;
+}
+
+#portfolio  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#portfolio div   {
+    display: flex;
+    margin: 5%;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+}
+
+
+#portfolio a    {
+    color: black;
+    justify-content: center;
+    display: block;
+    padding-top: 10%;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}
+
+#portfolio a:hover   {
+    background-color: #85858567;
+}
+
+#portfolia h1   {
+    justify-content: center;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#about  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+}
+
+#about div   {
+    display: flex;
+    width: 70%;
+    margin-top: 5%;
+}
+
+#contact  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20vh;
+    flex-wrap: wrap;
+}
+
+#contact div   {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #707070;
+    color: var(--main-color);
+    height: 6vh;
+    min-height: 40px;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    bottom: 0;
+    left: 0;
+}
