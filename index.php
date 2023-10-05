@@ -15,7 +15,7 @@
     <main>
             <div id="portfolio">
                 <h1>Mijn Portfolio</h1>
-                <div><a href="project1"><img class="img" src="img/undraw_businessman_e7v0.svg">Project1</a></div>
+                <div><a href="project1"><img class="img" src="img/undraw_businessman_e7v0.svg" alt="undrawbusinessman">Project1</a></div>
                 <div><a href="project2">Project2</a></div>
                 <div><a href="project3">Project3</a></div>
                 <div><a href="project4">Project4</a></div>

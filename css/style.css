@@ -1,14 +1,16 @@
 :root {
     --main-color: aliceblue;
     --main-background-color: #EFEFF1;
+    --main-filter: invert(100%) sepia(15%) saturate(715%) hue-rotate(180deg) brightness(97%) contrast(96%);
 }
+
 *{
     margin:0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     font-family: monospace;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 html{ 
@@ -86,7 +88,6 @@ main h1   {
     justify-content: center;
 }
 
-
 #portfolio a    {
     color: black;
     justify-content: center;
@@ -109,7 +110,6 @@ main h1   {
     width: 100%;
     height: 100%;
 }
-
 
 #about  {
     display: flex;
@@ -139,11 +139,13 @@ main h1   {
     justify-content: center;
 }
 
-
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     background-color: #707070;
     color: var(--main-color);
     height: 6vh;
@@ -156,6 +158,77 @@ footer {
     left: 0;
 }
 
+footer p {
+    grid-area: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    grid-area: 1/3;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+}
+
+footer a img {
+    filter: var(--main-filter);
+    margin-right: 10px;
+}
+
+footer a img:hover{
+    filter: invert(60%) sepia(45%) saturate(6499%) hue-rotate(174deg) brightness(100%) contrast(103%);
+    transform: scale(1.3);
+    transition: .5s;
+}
+
 form {
     margin-top: 10vh;
+}
+
+#form  {
+    display: block;
+    justify-content: center;
+    width: 40%;
+}
+
+
+.container  {
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+
+.container div   {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.container input textarea{
+    width: 30%;
+    height: 40px;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    border: 1px solid #707070;
+}
+
+
+.container textarea{
+    min-width: 40%;
+    max-width: 40%;
+    min-height: 100px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    * {
+      font-size: 0.8rem;
+    }
+    footer a img {
+        width: 10%;
+    }
 }
